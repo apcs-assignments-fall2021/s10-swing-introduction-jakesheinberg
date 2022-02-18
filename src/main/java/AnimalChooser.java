@@ -20,13 +20,38 @@ public class AnimalChooser {
         JLabel label1 = new JLabel("");
         frame.add(label1);
 
+//        JLabel label2 = new JLabel("");
+//        frame.add(label2);
+
         JButton button1 = new JButton("Red Panda");
         frame.add(button1, BorderLayout.SOUTH);
+
+        JButton button2 = new JButton("seal");
+        frame.add(button2, BorderLayout.NORTH);
+
+        JButton button3 = new JButton("yuvi");
+        frame.add(button3, BorderLayout.EAST);
 
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
                 ImageIcon icon = new ImageIcon("images/red_panda.jpg");
                 label1.setIcon(icon);
+
+            }
+        });
+        button2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                ImageIcon icon1 = new ImageIcon("images/seal.jpg");
+                label1.setIcon(icon1);
+
+            }
+        });
+
+        button3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                ImageIcon icon2 = new ImageIcon("images/img.jpg");
+                label1.setIcon(icon2);
+
             }
         });
 

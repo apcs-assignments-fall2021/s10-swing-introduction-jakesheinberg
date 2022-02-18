@@ -27,12 +27,16 @@ public class HelloWorldUser {
         JTextField field1 = new JTextField(10);
         frame.add(field1);
 
+        JTextField field2 = new JTextField(10);
+        frame.add(field2);
+
         JButton button1 = new JButton("Click Here!");
         frame.add(button1);
 
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
-                field1.setText("Hi!");
+
+                field2.setText("Hi! "+field1.getText() +"!");
             }
         });
 
